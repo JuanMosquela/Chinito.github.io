@@ -1,0 +1,42 @@
+$black: #000;
+$light-black:#19191a;
+$white: #FFF;
+$light-white: rgba(255,255,255,0.7);
+$red:#C21A1A;
+$red-hover:#E74F4E;
+$whatsapp:#4EC95C;
+$banner-gradient: linear-gradient(90deg, rgba(194, 26, 26, 0.6), #E74F4E);
+$box-shadow: 0 .3rem 1rem rgba(0,0,0,0.3);
+
+$fs-1:3.2rem;
+$fs-2:2.8rem;
+$fs-3:2.2rem;
+$fs-4:1.8rem;
+$fs-5:1.6rem;
+
+@mixin fs-2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.8rem;
+    
+}
+
+@mixin fs-3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.4rem;
+    
+}
+
+@mixin fs-4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.8rem;
+    
+}
