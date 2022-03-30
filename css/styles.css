@@ -106,8 +106,7 @@ main .swiper-wrapper {
     main .swiper-wrapper .swiper-slide img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center; }
+      object-fit: cover; }
     main .swiper-wrapper .swiper-slide .hero-content {
       position: absolute;
       top: 40%;
