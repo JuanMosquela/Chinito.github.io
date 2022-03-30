@@ -6,24 +6,19 @@
     outline:none;    
     list-style: none;
     font-family: 'Poppins', sans-serif;    
-    transition: 0.3s linear;
-    
+    transition: 0.3s linear;    
 }
 
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;   
 }
- 
-
-
 
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;    
 }
-
 
 @mixin flex-around {
     display: flex;
@@ -33,15 +28,19 @@ html{
 
 @mixin btn{
     display: inline-block;
+    text-align: center;
     background-color: $red;
     font-weight: 600;
     color: $white;
     padding: 0.5rem 1rem;    
     text-transform: uppercase;
     transform: skew(-20deg);
+    width: 200px;
 
+    &:hover{
+        background-color: $red-hover;       
+    }
 }
-
 
 $colorsSocial: (
     youtube: #FF0000,

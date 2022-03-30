@@ -14,10 +14,12 @@ html {
 
 .header {
   position: fixed;
-  background-color: transparent;
   width: 100%;
-  height: 80px;
-  z-index: 1000; }
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .header .header-container {
     display: flex;
     justify-content: space-between;
@@ -86,6 +88,12 @@ html {
       color: #4EC95C;
       background-color: #FFF; }
 
+.sticky {
+  background-color: #FFF;
+  box-shadow: 1px 10px 25px 0 rgba(0, 0, 0, 0.3); }
+  .sticky .header-container .nav ul li a {
+    color: #27282D; }
+
 main .swiper-wrapper {
   height: 85vh;
   display: flex;
@@ -115,15 +123,19 @@ main .swiper-wrapper {
         margin-bottom: 2rem; }
       main .swiper-wrapper .swiper-slide .hero-content a {
         display: inline-block;
+        text-align: center;
         background-color: #C21A1A;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        transform: skew(-20deg); }
+        transform: skew(-20deg);
+        width: 200px; }
+        main .swiper-wrapper .swiper-slide .hero-content a:hover {
+          background-color: #E74F4E; }
 
 main .about, main .about .container {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 100%;
   background-color: #19191a;
   background-image: radial-gradient(#19191a, #000);
@@ -169,12 +181,16 @@ main .about, main .about .container {
         line-height: 1.8rem; }
       main .about .container .content a {
         display: inline-block;
+        text-align: center;
         background-color: #C21A1A;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        transform: skew(-20deg); }
+        transform: skew(-20deg);
+        width: 200px; }
+        main .about .container .content a:hover {
+          background-color: #E74F4E; }
 
 main .services {
   min-height: 70vh;
@@ -256,16 +272,22 @@ main .services {
               font-size: .8rem; } }
         main .services .container .card .content a {
           display: inline-block;
+          text-align: center;
           background-color: #C21A1A;
           font-weight: 600;
           color: #FFF;
           padding: 0.5rem 1rem;
           text-transform: uppercase;
           transform: skew(-20deg);
+          width: 200px;
           width: 50%; }
+          main .services .container .card .content a:hover {
+            background-color: #E74F4E; }
           @media (max-width: 608px) {
             main .services .container .card .content a {
               width: 100%; } }
+          main .services .container .card .content a span {
+            transform: skew(20deg); }
 
 main .banner {
   height: 50vh;
@@ -347,45 +369,44 @@ main .pricing .pricing-container {
       margin: 0 auto; }
 
 main .FAQ {
-  min-height: 75vh;
-  background-image: radial-gradient(#19191a, #000);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  min-height: 40rem;
+  padding: 0 8%;
+  background-color: #1F2023; }
+  @media (max-width: 600px) {
+    main .FAQ {
+      padding: 0 2%; } }
+  main .FAQ h2 {
+    color: #FFF;
+    padding: 2rem 0;
+    font-size: 2.8rem; }
   main .FAQ .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 8%; }
-    main .FAQ .container .heading {
-      text-align: center;
-      color: #FFF; }
-      main .FAQ .container .heading h2 {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-weight: 800;
-        font-style: italic;
-        font-size: 2.8rem;
-        padding-bottom: 3rem; }
-    @media (max-width: 868px) {
-      main .FAQ .container {
-        padding: 0 4%; } }
-    main .FAQ .container .row {
-      color: #FFF;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #FFF; }
-      main .FAQ .container .row .question {
-        font-size: 1.2rem;
+    flex-direction: column; }
+    main .FAQ .container .container-question {
+      background-color: #27282D;
+      margin: 1rem 0;
+      padding: 1rem;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.6); }
+      main .FAQ .container .container-question:hover {
+        color: #FFF; }
+      main .FAQ .container .container-question .question {
+        background-color: #27282D;
+        margin-bottom: 1rem;
         display: flex;
-        justify-content: space-between;
-        align-items: center; }
-      main .FAQ .container .row p {
-        padding-top: 1rem;
-        line-height: 1.6rem;
-        display: none; }
-    main .FAQ .container .is-active p {
-      display: block; }
-  main .FAQ .is-active {
-    max-height: fit-content; }
+        justify-content: space-between; }
+      main .FAQ .container .container-question .answer {
+        text-align: justify;
+        max-height: 0;
+        opacity: 0;
+        transition: 0.3 ease all; }
+    main .FAQ .container .is-active {
+      border: 1px solid rgba(255, 255, 255, 0.6); }
+      main .FAQ .container .is-active .answer {
+        opacity: 1;
+        max-height: fit-content; }
+      main .FAQ .container .is-active .question i {
+        transform: rotate(180deg);
+        transition: .1s; }
 
 .footer {
   background-color: #000;
