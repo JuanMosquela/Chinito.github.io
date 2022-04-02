@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
      <!-------------- CDN AOS -------------->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
 
     <!-------------- ARCHIVO CSS -------------->
     <link rel="stylesheet" href="./css/styles.css">
@@ -31,30 +31,30 @@
 <body>
     <header class="header" >
         <div class="header-container">
-            <a class="logo" href="">
-                <img src="" alt="">
+            <a class="logo" href="index.html" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+                <img src="./img/LOGO 1.png" alt="">
             </a>
             <nav class="nav">
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#pricing">Precios</a></li>
-                    <li><a href="">Clientes</a></li>
+                    <li href="index.html" data-aos="fade-down" data-aos-duration="5000" data-aos-delay="4000"><a href="#home">Inicio</a></li>
+                    <li href="index.html" data-aos="fade-down" data-aos-duration="500" data-aos-delay="420"><a href="#about">Sobre mi</a></li>
+                    <li href="index.html" data-aos="fade-down" data-aos-duration="500" data-aos-delay="440"><a href="#services">Servicios</a></li>
+                    <li href="index.html" data-aos="fade-down" data-aos-duration="500" data-aos-delay="460"><a href="#pricing">Precios</a></li>
+                    <li href="index.html" data-aos="fade-down" data-aos-duration="500" data-aos-delay="480"><a href="#cliente">Clientes</a></li>
                     
                 </ul>
             </nav>
             <nav class="lat-nav" id="lat-nav">
                 <ul>
                     <li><a href="">Inicio</a></li>
-                    <li><a href=""></a>Sobre mi</li>
-                    <li><a href=""></a>Servicios</li>
-                    <li><a href=""></a>Precios</li>
-                    <li><a href=""></a>Clientes</li>
+                    <li><a href="">Sobre mi</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Precios</a></li>
+                    <li><a href="">Clientes</a></li>
                     
                 </ul>
             </nav>
-            <div class="menu" id="open-close">
+            <div class="menu">
                 <i class="fa-solid fa-bars"></i>            
             </div>
 
@@ -70,53 +70,68 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
             
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" >
                         <img src="./img/slide.jpg"  alt="">
-                        <div class="hero-content">
-                            <span>Arranca ya</span>
-                            <h1>Veni a entrenar conmigo</h1>
-                            <a class="btn" href="#">Empezar ya</a>
+                        <div class="hero-content"  >
+                            <span data-aos="fade-left" data-aos-duration="5000" data-aos-delay="8000">Arranca ya</span>
+                            <h1 data-aos="fade-left" data-aos-duration="5000" data-aos-delay="8000">Veni a entrenar conmigo</h1>
+                            <div class="element" >
+                                <div class="content-element">
+                                    <a href="" class="btn" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Leer mas</a>
+                                </div>
+                            </div>
                         </div>
     
                     </div>
                     <div class="swiper-slide">
                         <img src="./img/slide-2.jpg" alt="">
-                        <div class="hero-content">
+                        <div class="hero-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                             <span>Arranca ya</span>
                             <h1>Veni a entrenar conmigo</h1>
-                            <a class="btn" href="#">Empezar ya</a>
+                            <div class="element">
+                                <div class="content-element">
+                                    <a href="" class="btn">Leer mas</a>
+                                </div>
+                            </div>
                         </div>
     
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/slide-3.jpg" alt="">
-                        <div class="hero-content">
+                        <img src="./img/slide-3.jpg"  alt="">
+                        <div class="hero-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                             <span>Arranca ya</span>
                             <h1>Veni a entrenar conmigo</h1>
-                            <a class="btn" href="#">Empezar ya</a>
+                            <div class="element">
+                                <div class="content-element">
+                                    <a href="" class="btn">Leer mas</a>
+                                </div>
+                            </div>
                         </div>
     
                     </div>
                     
                 </div>       
                 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> 
+                
             </div>         
             
         </section> 
         
         
         <section class="about" id="about">
-            <div class="container">
-                <div class="video">
-                    <video src="./video/video-header.mp4" type="video/mp4" loop autoplay muted></video>
+            <div class="container" >
+                <div class="video"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <video  src="./video/video-header.mp4" type="video/mp4" loop autoplay muted></video>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" >
                     <h2>Animate a cambiar tu vida</h2>
                     <p>Mi nombre es Joaquin, tengo el privilegio de poder trabajar de lo que amo y brindarles mi servicio para ayudarlos a cumplir sus metas, ofreciendoles una mejor calidad de vida tanto a quellas personas que buscan un cambio estético, mejorar su rendimiento físico y por sobre todo, <span>una mejor calidad de vida</span></p>
                     <p>Si decidis dar el siguiente paso en esta aventura voy a estar a tu lado para ayudarte a transitar este proceso</p>
-                    <a class="btn" href="#"><span>Leer mas</span></a>
+                    <div class="element">
+                        <div class="content-element">
+                            <a href="" class="btn">Leer mas</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -124,41 +139,53 @@
 
         <section class="services" id="services">
             <div class="container">
-                <div class="card">
-                    <div class="img">
+                <div class="card" >
+                    <div class="img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         <img src="./img/card-1.jpeg" alt="">
                     </div>
-                    <div class="content">
+                    <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                         <h3><i class="fa-solid fa-dumbbell"></i>Musculacion</h3>
                                                 
                         <p>Planes de entrenamiento totalmente enfocados en ayudarte a lograr tu objetivo</p>
                         <p>Vamos a buscar una rutina que mas se adapte a tus necesidades, ya sea tatno para las peronas que entrenen en un gimnasio o las que prefieran hacer en casa, siempre se puede mejorar con la rutina correcta.</p>
-                        <a href="#">Leer mas</a>
+                        <div class="element">
+                            <div class="content-element">
+                                <a href="" class="btn">Leer mas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
                 <div class="card">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                         <h3><i class="fa-solid fa-chalkboard-user"></i>Asesoramiento</h3>
                         
                         <p>Seguimiento las 24hs, actualizacion de ejercicios y chequeo corporal mensual</p>
                         <p>Muchas veces, con solo tener una buena rutina no es suficiente. ¿Sabias que tu cuerpo se adapta a un nuev estimulo en poco tiempo? Es por eso que mi plan de entrenamiento varia despues de determinado tiempo para no estancarse</p>
-                        <a href="#">Leer mas</a>
+                        <div class="element">
+                            <div class="content-element">
+                                <a href="" class="btn">Leer mas</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="img">
+                    <div class="img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         <img src="./img/about-2.jpeg" alt="">
                     </div>
                 </div>
                 <hr>
                 <div class="card">
-                    <div class="img">
+                    <div class="img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         <img src="./img/card-2.jpeg" alt="">
                     </div>
-                    <div class="content">
+                    <div class="content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                         <h3><i class="fa-solid fa-apple-whole"></i>Plan nutricional</h3>
                         <p>Alimentacion balanceada enfocada en ayudarte a conseguir tu objetivo de la mejor manera</p>
                         <p>Muchas veces la parte mas descuidada ya que no todo el mundo tiene tiempo para sentarse a contar cuantas calorias consume en un dia. Con mi ayuda  </p>
-                        <a href="#">Leer mas</a>
+                        <div class="element">
+                            <div class="content-element">
+                                <a href="" class="btn">Leer mas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -168,7 +195,7 @@
         <section class="banner">            
             <div class="content">
                 <h3>Ahorra hasta un 50% en tu primer cuota</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat nulla nobis culpa sed reiciendis.</p>                
+                                
             </div>
         </section>
 
@@ -273,7 +300,13 @@
 
     
     
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
     <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>

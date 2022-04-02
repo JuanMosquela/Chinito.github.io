@@ -1,4 +1,7 @@
 const $question = document.querySelectorAll(".container .container-question");
+const menu = document.querySelector('.menu');
+const latNav = document.getElementById('lat-nav');
+const header = document.querySelector(".header"); 
 
 $question.forEach(el => {
     el.addEventListener('click', ()=>{
@@ -8,23 +11,26 @@ $question.forEach(el => {
 });
 
 window.addEventListener('scroll', ()=>{
-    const header = document.querySelector(".header");
-    header.classList.toggle('sticky', window.scrollY > 0)
+           
+    header.classList.toggle('sticky', window.scrollY > 0);
+    if(latNav.classList.contains('open-close')){
+        header.classList.add('sticky')
+
+    } 
+    
+    
+    
+
 })
 
+menu.addEventListener('click', () => {
+    latNav.classList.toggle('open-close');
+    
+    if(latNav.classList.contains('open-close') ){
+        header.classList.add('sticky')
+    }
+    menu.classList.toggle('dark-theme' );
+    
 
-var swiper = new Swiper(".swiper", {
-    
-    grabCursor: true,
-    loop:true,
-      
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }, 
-    pagination: {
-        el:".swiper-pagination",
-        clickable:true,
-    },   
-    
-});
+})
+

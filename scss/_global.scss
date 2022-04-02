@@ -37,6 +37,16 @@ html{
     transform: skew(-20deg);
     width: 200px;
 
+    .content-element{
+        transform: skew(20deg);
+
+        a{
+            color: $white;
+        }
+       }
+
+    
+
     &:hover{
         background-color: $red-hover;       
     }
