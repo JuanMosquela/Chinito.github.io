@@ -16,7 +16,7 @@
 
         .logo{
             img{
-                width:160px;        
+                width:200px;        
             }
         }
     
@@ -233,7 +233,7 @@ main{
         background-color: $light-black;
         background-image: radial-gradient($light-black, $black);
         background-size: cover;
-        margin-bottom: 2rem;
+        
         @include flex-center;
 
         .container{            
@@ -292,6 +292,65 @@ main{
                          
             }
         }
+    }
+
+    .shopping{
+        @include flex-center;
+        overflow: hidden;
+        height: 60vh;
+
+        div{
+            height:100%;
+            width:50%;
+            background: linear-gradient(130deg,hsla(0, 77%, 61%, 0.2), hsla(0, 77%, 61%, 0.1));
+            
+            background-position:center ;
+
+            .content{
+                @include flex-center;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    z-index: -1;
+                    object-fit: cover;
+                    transform: scale(1.2);
+                    animation: zoom-in 20s ease-in-out infinite;
+
+                    @keyframes zoom-in{
+                        0%{
+                            transform: scale(1.2);
+                        }
+                        50%{
+                            transform: scale(2);
+                        }
+                        100%{
+                            transform: scale(1.2);
+                        }
+                    }
+
+
+                }
+                
+                
+                h2{
+                    position: absolute;
+                    text-align: center;
+                    color: $white;
+                    font-size: $fs-2;
+                    text-transform: uppercase;
+                    
+                }
+
+            }
+            
+        }
+
+        
+
+        
     }
 
     

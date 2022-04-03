@@ -27,7 +27,7 @@ html {
     align-items: center;
     padding: 0 10%; }
     .header .header-container .logo img {
-      width: 160px; }
+      width: 200px; }
     @media (max-width: 980px) {
       .header .header-container .nav {
         display: none; } }
@@ -158,7 +158,7 @@ main .swiper-wrapper {
           main .swiper-wrapper .swiper-slide .hero-content .element .content-element a {
             color: #FFF; }
         main .swiper-wrapper .swiper-slide .hero-content .element:hover {
-          background-color: #E74F4E; }
+          background-color: #e84f4f; }
 
 main .about, main .about .container {
   min-height: 90vh;
@@ -166,7 +166,6 @@ main .about, main .about .container {
   background-color: #19191a;
   background-image: radial-gradient(#19191a, #000);
   background-size: cover;
-  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -220,7 +219,46 @@ main .about, main .about .container {
           main .about .container .content .element .content-element a {
             color: #FFF; }
         main .about .container .content .element:hover {
-          background-color: #E74F4E; }
+          background-color: #e84f4f; }
+
+main .shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 60vh; }
+  main .shopping div {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(130deg, rgba(232, 79, 79, 0.2), rgba(232, 79, 79, 0.1));
+    background-position: center; }
+    main .shopping div .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      overflow: hidden; }
+      main .shopping div .content img {
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+        transform: scale(1.2);
+        animation: zoom-in 20s ease-in-out infinite; }
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.2); }
+  50% {
+    transform: scale(2); }
+  100% {
+    transform: scale(1.2); } }
+      main .shopping div .content h2 {
+        position: absolute;
+        text-align: center;
+        color: #FFF;
+        font-size: 2.8rem;
+        text-transform: uppercase; }
 
 main .services {
   min-height: 70vh;
@@ -315,7 +353,7 @@ main .services {
             main .services .container .card .content .element .content-element a {
               color: #FFF; }
           main .services .container .card .content .element:hover {
-            background-color: #E74F4E; }
+            background-color: #e84f4f; }
 
 main .banner {
   height: 50vh;

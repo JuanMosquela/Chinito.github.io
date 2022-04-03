@@ -26,10 +26,10 @@ window.addEventListener('scroll', ()=>{
 menu.addEventListener('click', () => {
     latNav.classList.toggle('open-close');
     
-    if(latNav.classList.contains('open-close') ){
+    if(latNav.classList.contains('open-close')){
         header.classList.add('sticky')
     }
-    menu.classList.toggle('dark-theme' );
+    
     
 
 })
