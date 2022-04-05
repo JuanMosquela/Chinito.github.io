@@ -495,10 +495,10 @@ main{
     }    
 
     .banner{
-        min-height: 50vh;        
+        min-height: 40vh;        
         background: linear-gradient(-55deg, $red-hover 29%, $red 29%, $red 68%,  $red-hover 68%);      
         display: flex;
-        justify-content: space-between;  
+        justify-content: space-evenly;  
         align-items: center;
         margin-bottom: 3rem; 
              
@@ -521,8 +521,18 @@ main{
                 font-size: 1.4rem;
             }
         }
-        .img{
-            background-color: $red-hover;
+        .dumbell{
+            height: 200px;
+            width: 200px; 
+            
+                 
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;   
+                
+            }
 
         }
     }
