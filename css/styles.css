@@ -164,7 +164,7 @@ main .about, main .about .container {
   min-height: 90vh;
   width: 100%;
   background-color: #19191a;
-  background-image: radial-gradient(#19191a, #000);
+  background-image: url(../img/about-bg.png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -224,26 +224,33 @@ main .about, main .about .container {
 main .shopping {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 60vh; }
+  align-items: center; }
+  @media (max-width: 886px) {
+    main .shopping {
+      flex-direction: column;
+      width: 100%; } }
   main .shopping div {
     height: 100%;
     width: 50%;
-    background: linear-gradient(130deg, rgba(232, 79, 79, 0.2), rgba(232, 79, 79, 0.1));
+    height: 20rem;
     background-position: center; }
+    @media (max-width: 886px) {
+      main .shopping div {
+        width: 100%; } }
     main .shopping div .content {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       width: 100%;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      background: linear-gradient(130deg, rgba(232, 79, 79, 0.2), rgba(232, 79, 79, 0.1)); }
       main .shopping div .content img {
         width: 100%;
+        height: 100%;
         z-index: -1;
         object-fit: cover;
-        transform: scale(1.2);
         animation: zoom-in 20s ease-in-out infinite; }
 
 @keyframes zoom-in {
@@ -253,12 +260,19 @@ main .shopping {
     transform: scale(2); }
   100% {
     transform: scale(1.2); } }
-      main .shopping div .content h2 {
+      main .shopping div .content .product-title {
         position: absolute;
-        text-align: center;
-        color: #FFF;
-        font-size: 2.8rem;
-        text-transform: uppercase; }
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main .shopping div .content .product-title h2 {
+          color: #FFF;
+          font-size: 2.8rem;
+          text-transform: uppercase;
+          margin-right: 2rem; }
+        main .shopping div .content .product-title a {
+          color: #FFF;
+          font-size: 2rem; }
 
 main .services {
   min-height: 70vh;
@@ -356,84 +370,105 @@ main .services {
             background-color: #e84f4f; }
 
 main .banner {
-  height: 50vh;
-  overflow: hidden;
-  background: url(../img/banner.png) no-repeat center;
-  background-size: cover;
+  min-height: 50vh;
+  background: linear-gradient(-55deg, #e84f4f 29%, #C21A1A 29%, #C21A1A 68%, #e84f4f 68%);
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem; }
   main .banner .content {
-    padding: 0 2%;
-    text-align: center; }
-    main .banner .content h3 {
+    max-width: 500px;
+    min-height: 100%;
+    text-align: center;
+    background-color: #C21A1A;
+    padding: 2rem; }
+    main .banner .content h2 {
       color: #FFF;
       font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
       font-weight: 800;
       font-style: italic;
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       padding-bottom: 1.5rem; }
     main .banner .content p {
-      color: #FFF; }
-
-main .pricing .pricing-container {
-  min-height: 80vh;
-  padding: 0 10%;
-  background-image: url(../img/white-concrete-wall.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media (max-width: 1200px) {
-    main .pricing .pricing-container {
-      flex-wrap: wrap; } }
-  @media (max-width: 600px) {
-    main .pricing .pricing-container {
-      margin-top: 3rem; } }
-  main .pricing .pricing-container .card {
-    border: 1px solid black;
-    background-color: #FFF;
-    padding-bottom: 1rem;
-    margin: 2rem;
-    width: 33.3%;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
-    text-align: center;
-    border: thin solid rgba(102, 102, 102, 0.596); }
-    @media (max-width: 500px) {
-      main .pricing .pricing-container .card {
-        margin: 1rem 0; } }
-    main .pricing .pricing-container .card .card-content {
-      text-align: center; }
-      main .pricing .pricing-container .card .card-content h4 {
-        font-size: 2rem;
-        padding: 1.5rem;
-        color: #FFF;
-        background-color: #285AEB;
-        margin-bottom: 1rem; }
-      main .pricing .pricing-container .card .card-content span {
-        font-size: 2rem;
-        font-weight: 600;
-        padding: 0.5rem 0;
-        margin-bottom: 1rem; }
-    main .pricing .pricing-container .card ul {
-      padding: 2rem 1rem; }
-      main .pricing .pricing-container .card ul li {
-        padding: 0.5rem 0;
-        text-align: left; }
-        main .pricing .pricing-container .card ul li .fa-circle-check {
-          color: #4EC95C;
-          margin-right: 15px; }
-        main .pricing .pricing-container .card ul li .fa-circle-xmark {
-          color: #C21A1A;
-          margin-right: 15px; }
-    main .pricing .pricing-container .card a {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 1.4rem;
-      padding: 0.5rem 2rem;
-      background-color: #285AEB;
       color: #FFF;
-      margin: 0 auto; }
+      font-size: 1.4rem; }
+  main .banner .img {
+    background-color: #e84f4f; }
+
+main .pricing {
+  overflow: hidden;
+  min-height: 80vh;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center; }
+  main .pricing .img {
+    width: 100%;
+    min-height: 100%; }
+    main .pricing .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  main .pricing .pricing-container {
+    display: flex; }
+    @media (max-width: 900px) {
+      main .pricing .pricing-container {
+        flex-wrap: wrap; } }
+    main .pricing .pricing-container .info-container {
+      width: 100%;
+      height: 100%;
+      padding: 3rem;
+      background-image: url(../img/about-bg.png); }
+      @media (max-width: 600px) {
+        main .pricing .pricing-container .info-container {
+          padding: 2rem 1rem; } }
+      main .pricing .pricing-container .info-container h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 2.8rem;
+        color: #FFF; }
+      main .pricing .pricing-container .info-container h3 {
+        font-size: 2.2rem;
+        color: #FFF;
+        margin: 2rem 0; }
+      main .pricing .pricing-container .info-container p {
+        color: #FFF;
+        letter-spacing: 1px;
+        margin-bottom: 3rem;
+        line-height: 1.8rem; }
+      main .pricing .pricing-container .info-container ul {
+        line-height: 4rem;
+        margin-bottom: 3rem; }
+        @media (max-width: 600px) {
+          main .pricing .pricing-container .info-container ul {
+            line-height: 2.5rem; } }
+        main .pricing .pricing-container .info-container ul li {
+          color: #FFF;
+          font-size: 1.2rem; }
+          @media (max-width: 600px) {
+            main .pricing .pricing-container .info-container ul li {
+              font-size: 1rem; } }
+          main .pricing .pricing-container .info-container ul li i {
+            color: #C21A1A;
+            margin-right: 1rem; }
+      main .pricing .pricing-container .info-container a {
+        display: inline-block;
+        text-align: center;
+        background-color: #C21A1A;
+        font-weight: 600;
+        color: #FFF;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        transform: skew(-20deg);
+        width: 200px; }
+        main .pricing .pricing-container .info-container a .content-element {
+          transform: skew(20deg); }
+          main .pricing .pricing-container .info-container a .content-element a {
+            color: #FFF; }
+        main .pricing .pricing-container .info-container a:hover {
+          background-color: #e84f4f; }
 
 main .FAQ {
   min-height: 40rem;
