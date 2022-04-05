@@ -379,9 +379,7 @@ main .banner {
   main .banner .content {
     max-width: 500px;
     min-height: 100%;
-    text-align: center;
-    background-color: #C21A1A;
-    padding: 2rem; }
+    text-align: center; }
     main .banner .content h2 {
       color: #FFF;
       font-family: 'Montserrat', sans-serif;
@@ -389,6 +387,7 @@ main .banner {
       font-weight: 800;
       font-style: italic;
       font-size: 2.8rem;
+      padding: 0;
       padding-bottom: 1.5rem; }
     main .banner .content p {
       color: #FFF;
