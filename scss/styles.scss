@@ -501,6 +501,7 @@ main{
         justify-content: space-evenly;  
         align-items: center;
         margin-bottom: 3rem; 
+        position: relative;
              
 
         .content{ 
@@ -521,20 +522,13 @@ main{
                 font-size: 1.4rem;
             }
         }
-        .dumbell{
-            height: 200px;
-            width: 200px; 
-            
-                 
 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;   
-                
-            }
-
+        img{
+            position: absolute;
+            bottom: 0;
+            right: 5rem;
         }
+        
     }
 
     .pricing{ 
@@ -635,7 +629,8 @@ main{
     .FAQ{
         min-height: 40rem;
         padding: 0 10%;     
-        background-color: $bg;
+        background-color: $white;
+
         
     
         @media(max-width:600px){
@@ -643,10 +638,21 @@ main{
         } 
         
         h2{
-            color: $white;
-            padding: 2rem 0;
-            font-size: $fs-2;
+            color: $black;
+            
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+
         }
+
+        span{
+            
+            font-size: 1.2rem;
+            
+        }
+
+        
         
         
 
@@ -654,25 +660,27 @@ main{
         
         .container{
             flex-direction: column;
+            margin-top: 3rem;
             
             
     
             .container-question{
-                background-color: $black-light;
+                background-color: $white;
+                border: 1px solid $grey;
                 margin: 1rem 0;
                 padding: 1rem;
                 cursor: pointer;   
-                color: $white-letter; 
+            c
                 
                 &:hover{
-                    color: $white;
+                    color: $black;
                 }
 
                 
     
                 .question{
-                    background-color: $black-light;
-                    margin-bottom: 1rem;
+                    color: $black;
+                    
                     display: flex;
                     justify-content: space-between;               
                 }
@@ -683,15 +691,18 @@ main{
                     max-height: 0;
                     opacity: 0;
                     transition: 0.3 ease all;
+                    color: $black;
+                    
                 }
             }
     
             .is-active{            
-                border: 1px solid $white-letter;
+                border: 1px solid $red-hover;
     
                 .answer{
                     opacity: 1;
-                    max-height: fit-content;                
+                    max-height: fit-content; 
+                    padding: 1rem 0;               
                 }
     
                 .question i{

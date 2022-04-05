@@ -375,7 +375,8 @@ main .banner {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  position: relative; }
   main .banner .content {
     max-width: 500px;
     min-height: 100%;
@@ -392,13 +393,10 @@ main .banner {
     main .banner .content p {
       color: #FFF;
       font-size: 1.4rem; }
-  main .banner .dumbell {
-    height: 200px;
-    width: 200px; }
-    main .banner .dumbell img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+  main .banner img {
+    position: absolute;
+    bottom: 0;
+    right: 5rem; }
 
 main .pricing {
   overflow: hidden;
@@ -477,39 +475,44 @@ main .pricing {
 main .FAQ {
   min-height: 40rem;
   padding: 0 10%;
-  background-color: #1F2023; }
+  background-color: #FFF; }
   @media (max-width: 600px) {
     main .FAQ {
       padding: 0 2%; } }
   main .FAQ h2 {
-    color: #FFF;
-    padding: 2rem 0;
-    font-size: 2.8rem; }
+    color: #000;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+  main .FAQ span {
+    font-size: 1.2rem; }
   main .FAQ .container {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 3rem; }
     main .FAQ .container .container-question {
-      background-color: #27282D;
+      background-color: #FFF;
+      border: 1px solid #cecccc;
       margin: 1rem 0;
       padding: 1rem;
-      cursor: pointer;
-      color: rgba(255, 255, 255, 0.6); }
-      main .FAQ .container .container-question:hover {
-        color: #FFF; }
+      cursor: pointer; }
+      c main .FAQ .container .container-question:hover {
+        color: #000; }
       main .FAQ .container .container-question .question {
-        background-color: #27282D;
-        margin-bottom: 1rem;
+        color: #000;
         display: flex;
         justify-content: space-between; }
       main .FAQ .container .container-question .answer {
         text-align: justify;
         max-height: 0;
         opacity: 0;
-        transition: 0.3 ease all; }
+        transition: 0.3 ease all;
+        color: #000; }
     main .FAQ .container .is-active {
-      border: 1px solid rgba(255, 255, 255, 0.6); }
+      border: 1px solid #e84f4f; }
       main .FAQ .container .is-active .answer {
         opacity: 1;
-        max-height: fit-content; }
+        max-height: fit-content;
+        padding: 1rem 0; }
       main .FAQ .container .is-active .question i {
         transform: rotate(180deg);
         transition: .1s; }
