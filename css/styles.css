@@ -147,12 +147,12 @@ main .swiper-wrapper {
         display: inline-block;
         text-align: center;
         background-color: #C21A1A;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        transform: skew(-20deg);
-        width: 200px; }
+        transform: skew(-20deg); }
         main .swiper-wrapper .swiper-slide .hero-content .element .content-element {
           transform: skew(20deg); }
           main .swiper-wrapper .swiper-slide .hero-content .element .content-element a {
@@ -195,7 +195,7 @@ main .about, main .about .container {
         text-transform: uppercase;
         font-weight: 800;
         font-style: italic;
-        font-size: 2.8rem;
+        font-size: 2rem;
         margin-bottom: 2rem; }
         @media (max-width: 600px) {
           main .about .container .content h2 {
@@ -208,12 +208,12 @@ main .about, main .about .container {
         display: inline-block;
         text-align: center;
         background-color: #C21A1A;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        transform: skew(-20deg);
-        width: 200px; }
+        transform: skew(-20deg); }
         main .about .container .content .element .content-element {
           transform: skew(20deg); }
           main .about .container .content .element .content-element a {
@@ -333,7 +333,7 @@ main .services {
           text-transform: uppercase;
           font-weight: 800;
           font-style: italic;
-          font-size: 2.4rem;
+          font-size: 1.8rem;
           margin-bottom: 1.5rem;
           text-align: justify; }
           @media (max-width: 600px) {
@@ -351,17 +351,17 @@ main .services {
           text-align: justify; }
           @media (max-width: 600px) {
             main .services .container .card .content p {
-              font-size: .8rem; } }
+              font-size: 1rem; } }
         main .services .container .card .content .element {
           display: inline-block;
           text-align: center;
           background-color: #C21A1A;
+          font-size: 1.2rem;
           font-weight: 600;
           color: #FFF;
           padding: 0.5rem 1rem;
           text-transform: uppercase;
-          transform: skew(-20deg);
-          width: 200px; }
+          transform: skew(-20deg); }
           main .services .container .card .content .element .content-element {
             transform: skew(20deg); }
             main .services .container .card .content .element .content-element a {
@@ -387,7 +387,7 @@ main .banner {
       text-transform: uppercase;
       font-weight: 800;
       font-style: italic;
-      font-size: 2.8rem;
+      font-size: 2rem;
       padding: 0;
       padding-bottom: 1.5rem; }
     main .banner .content p {
@@ -399,56 +399,58 @@ main .banner {
     right: 5rem; }
 
 main .pricing {
-  overflow: hidden;
   min-height: 80vh;
   margin-bottom: 3rem;
   display: flex;
-  align-items: center; }
+  justify-content: center; }
   main .pricing .img {
-    width: 100%;
-    min-height: 100%; }
+    height: 100%; }
     main .pricing .img img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
   main .pricing .pricing-container {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     @media (max-width: 900px) {
       main .pricing .pricing-container {
-        flex-wrap: wrap; } }
+        flex-direction: column; } }
+    main .pricing .pricing-container .img {
+      flex: 1 1;
+      height: 100%; }
     main .pricing .pricing-container .info-container {
-      width: 100%;
+      flex: 1 1;
       height: 100%;
       padding: 3rem;
       background-image: url(../img/about-bg.png); }
       @media (max-width: 600px) {
         main .pricing .pricing-container .info-container {
-          padding: 2rem 1rem; } }
+          padding: 1.5rem 1rem; } }
       main .pricing .pricing-container .info-container h2 {
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-weight: 800;
         font-style: italic;
-        font-size: 2.8rem;
+        font-size: 2rem;
         color: #FFF; }
       main .pricing .pricing-container .info-container h3 {
         font-size: 2.2rem;
         color: #FFF;
-        margin: 2rem 0; }
+        margin: 1rem 0; }
       main .pricing .pricing-container .info-container p {
         color: #FFF;
         letter-spacing: 1px;
-        margin-bottom: 3rem;
-        line-height: 1.8rem; }
+        margin-bottom: 1.5rem; }
       main .pricing .pricing-container .info-container ul {
-        line-height: 4rem;
         margin-bottom: 3rem; }
         @media (max-width: 600px) {
           main .pricing .pricing-container .info-container ul {
-            line-height: 2.5rem; } }
+            line-height: 1rem; } }
         main .pricing .pricing-container .info-container ul li {
           color: #FFF;
-          font-size: 1.2rem; }
+          font-size: 1rem;
+          padding: 1rem 0; }
           @media (max-width: 600px) {
             main .pricing .pricing-container .info-container ul li {
               font-size: 1rem; } }
@@ -459,18 +461,66 @@ main .pricing {
         display: inline-block;
         text-align: center;
         background-color: #C21A1A;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        transform: skew(-20deg);
-        width: 200px; }
+        transform: skew(-20deg); }
         main .pricing .pricing-container .info-container a .content-element {
           transform: skew(20deg); }
           main .pricing .pricing-container .info-container a .content-element a {
             color: #FFF; }
         main .pricing .pricing-container .info-container a:hover {
           background-color: #e84f4f; }
+
+main .products {
+  min-height: 100vh;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .products .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    main .products .container-products .card {
+      overflow: hidden;
+      width: 400px;
+      border: 1px solid #beb9b9; }
+      main .products .container-products .card:hover {
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3); }
+      main .products .container-products .card .img {
+        height: 500px;
+        width: 400px; }
+        main .products .container-products .card .img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      main .products .container-products .card .content {
+        padding: 1rem; }
+        main .products .container-products .card .content p {
+          margin-bottom: 1rem; }
+        main .products .container-products .card .content .element {
+          display: inline-block;
+          text-align: center;
+          background-color: #C21A1A;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #FFF;
+          padding: 0.5rem 1rem;
+          text-transform: uppercase;
+          transform: skew(-20deg);
+          font-size: 1rem;
+          width: 100%; }
+          main .products .container-products .card .content .element .content-element {
+            transform: skew(20deg); }
+            main .products .container-products .card .content .element .content-element a {
+              color: #FFF; }
+          main .products .container-products .card .content .element:hover {
+            background-color: #e84f4f; }
 
 main .FAQ {
   min-height: 40rem;

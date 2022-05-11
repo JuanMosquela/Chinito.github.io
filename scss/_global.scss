@@ -30,12 +30,13 @@ html{
     display: inline-block;
     text-align: center;
     background-color: $red;
+    font-size: 1.2rem;
     font-weight: 600;
     color: $white;
     padding: 0.5rem 1rem;    
     text-transform: uppercase;
     transform: skew(-20deg);
-    width: 200px;
+    
 
     .content-element{
         transform: skew(20deg);
