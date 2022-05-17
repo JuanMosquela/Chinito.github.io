@@ -118,18 +118,18 @@ html {
       color: #C21A1A; }
 
 main .swiper-wrapper {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #000; }
   main .swiper-wrapper .swiper-slide {
     height: 100%;
     width: 100%;
     position: relative; }
     main .swiper-wrapper .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+      position: absolute;
+      right: 10%; }
     main .swiper-wrapper .swiper-slide .hero-content {
       position: absolute;
       top: 30%;
@@ -260,19 +260,6 @@ main .shopping {
     transform: scale(2); }
   100% {
     transform: scale(1.2); } }
-      main .shopping div .content .product-title {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        main .shopping div .content .product-title h2 {
-          color: #FFF;
-          font-size: 2.8rem;
-          text-transform: uppercase;
-          margin-right: 2rem; }
-        main .shopping div .content .product-title a {
-          color: #FFF;
-          font-size: 2rem; }
 
 main .services {
   min-height: 70vh;
@@ -368,35 +355,6 @@ main .services {
               color: #FFF; }
           main .services .container .card .content .element:hover {
             background-color: #e84f4f; }
-
-main .banner {
-  min-height: 40vh;
-  background: linear-gradient(-55deg, #e84f4f 29%, #C21A1A 29%, #C21A1A 68%, #e84f4f 68%);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 3rem;
-  position: relative; }
-  main .banner .content {
-    max-width: 500px;
-    min-height: 100%;
-    text-align: center; }
-    main .banner .content h2 {
-      color: #FFF;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      font-weight: 800;
-      font-style: italic;
-      font-size: 2rem;
-      padding: 0;
-      padding-bottom: 1.5rem; }
-    main .banner .content p {
-      color: #FFF;
-      font-size: 1.4rem; }
-  main .banner img {
-    position: absolute;
-    bottom: 0;
-    right: 5rem; }
 
 main .pricing {
   min-height: 80vh;
