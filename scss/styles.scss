@@ -384,11 +384,14 @@ main{
                 }
 
                 .img{
-                    flex: 1 1 40rem;
-                    height: 600px;
-                    width: 560px;
+                    flex: 1 1 40rem;                    
+                    height: 680px;                    
                     overflow: hidden;
                     position: relative;
+
+                    
+                    
+                    
                     
 
                     &::before{
@@ -422,7 +425,11 @@ main{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        object-position: center;                         
+                        object-position: center; 
+                        
+                        &:hover{
+                            transform: scale(1.05);
+                        }
                     }
                 }
 
@@ -483,9 +490,10 @@ main{
     .pricing{ 
        
         min-height: 80vh;        
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         display: flex;        
         justify-content: center;
+        padding: 0;
         
 
         .img{
@@ -587,15 +595,18 @@ main{
 
 
     .products{
-        min-height: 100vh;
-        padding: 1rem 0;
-        @include flex-center;
+        min-height: 60vh;
+        padding: 2rem 10%;
+        
+        
+        
+            
 
 
         .container-products{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;           
             align-items: center;
             gap: 2rem;
 
@@ -606,6 +617,7 @@ main{
 
                 &:hover{
                     box-shadow: 3px 6px 10px rgba(0,0,0,0.3);
+                    cursor: pointer;
                 }
                 
 

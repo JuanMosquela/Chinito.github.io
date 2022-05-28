@@ -139,7 +139,7 @@ main .swiper-wrapper {
         font-size: 1.8rem;
         font-weight: bolder; }
       main .swiper-wrapper .swiper-slide .hero-content h1 {
-        font-size: 3.2rem;
+        font-size: 3.8rem;
         font-weight: 700;
         color: #FFF;
         margin-bottom: 2rem; }
@@ -280,8 +280,7 @@ main .services {
           flex-wrap: wrap; } }
       main .services .container .card .img {
         flex: 1 1 40rem;
-        height: 600px;
-        width: 560px;
+        height: 680px;
         overflow: hidden;
         position: relative; }
         main .services .container .card .img::before {
@@ -310,6 +309,8 @@ main .services {
           height: 100%;
           object-fit: cover;
           object-position: center; }
+          main .services .container .card .img img:hover {
+            transform: scale(1.05); }
       main .services .container .card .content {
         flex: 1 1 40rem;
         background-color: #FFF;
@@ -358,9 +359,10 @@ main .services {
 
 main .pricing {
   min-height: 80vh;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0; }
   main .pricing .img {
     height: 100%; }
     main .pricing .img img {
@@ -433,15 +435,12 @@ main .pricing {
           background-color: #e84f4f; }
 
 main .products {
-  min-height: 100vh;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  min-height: 60vh;
+  padding: 2rem 10%; }
   main .products .container-products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem; }
     main .products .container-products .card {
@@ -449,7 +448,8 @@ main .products {
       width: 400px;
       border: 1px solid #beb9b9; }
       main .products .container-products .card:hover {
-        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3); }
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer; }
       main .products .container-products .card .img {
         height: 500px;
         width: 400px; }
