@@ -11,7 +11,22 @@
 
 html{
     overflow-x: hidden;
-    scroll-behavior: smooth;   
+    scroll-behavior: smooth;
+    font-size: 65.2%; 
+    
+    @media(max-width:800px){
+        font-size: 62.5% ;
+    
+    }
+
+    @media(max-width:500px){
+        font-size: 55.5% ;
+    
+    }
+}
+
+section{
+    overflow-x: hidden;
 }
 
 @mixin flex-center {
@@ -30,7 +45,7 @@ html{
     display: inline-block;
     text-align: center;
     background-color: $red;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
     color: $white;
     padding: 0.5rem 1rem;    

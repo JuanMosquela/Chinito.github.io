@@ -6,25 +6,27 @@ $white: #FFF;
 $border:#c8ccd1;
 $white-letter:rgba(255, 255, 255, 0.6);
 $light-white: rgba(255,255,255,0.7);
-$red:#C21A1A;
-$red-hover:hsl(0, 77%, 61%);
+$red:#B20000;
+$red-hover:#cf1818;
 $grey: rgb(206, 204, 204);
 $whatsapp:#4EC95C;
 $banner-gradient: linear-gradient(90deg, rgba(194, 26, 26, 0.6), #E74F4E);
 $box-shadow: 0 .3rem 1rem rgba(0,0,0,0.3);
 
-$fs-1:3.8rem;
-$fs-2:2.8rem;
-$fs-3:2.2rem;
-$fs-4:1.8rem;
-$fs-5:1.6rem;
+$fs-1:5rem;
+$fs-2:4rem;
+$fs-3:3rem;
+$fs-4:2.2rem;
+$fs-5:2rem;
+$p:1.8rem;
 
 @mixin fs-2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
-    font-size: 2rem;
+    font-size: $fs-2;
+    
     
 }
 
@@ -33,7 +35,7 @@ $fs-5:1.6rem;
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: $fs-3;
     
 }
 
@@ -42,6 +44,6 @@ $fs-5:1.6rem;
     text-transform: uppercase;
     font-weight: 600;
     font-style: italic;
-    font-size: 1.6rem;
+    font-size: $fs-4;
     
 }
