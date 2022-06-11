@@ -684,8 +684,9 @@ main{
     
     
     .faq{
-        min-height: 50rem;
-        padding: 0 10%;     
+        min-height: 60rem;
+        padding: 4rem 10%;  
+          
         background-color: $white; 
         background-color: $black;  
         margin-bottom: 3rem; 
@@ -701,8 +702,10 @@ main{
         } 
 
         h2{
+
+            @include fs-2;
             color: #FFF;
-            font-size: $fs-2;
+                      
             text-align: center;
         }
         

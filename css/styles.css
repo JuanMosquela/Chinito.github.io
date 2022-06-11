@@ -508,8 +508,8 @@ main .products {
             background-color: #cf1818; }
 
 main .faq {
-  min-height: 50rem;
-  padding: 0 10%;
+  min-height: 60rem;
+  padding: 4rem 10%;
   background-color: #FFF;
   background-color: #000;
   margin-bottom: 3rem;
@@ -523,8 +523,12 @@ main .faq {
     main .faq {
       padding: 0 2%; } }
   main .faq h2 {
-    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
     font-size: 4rem;
+    color: #FFF;
     text-align: center; }
   main .faq .grid {
     display: grid;
