@@ -722,6 +722,7 @@ main{
                 .question{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     background-color: $red;
                     padding: 1.5rem;
                     color: #FFF;                    
@@ -736,6 +737,7 @@ main{
 
                     i{
                          font-size: 1.8rem;
+                         padding-left: 10px;
                          cursor: pointer;
                     }
                 }

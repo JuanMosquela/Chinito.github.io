@@ -536,6 +536,7 @@ main .faq {
     main .faq .grid .container-question .question {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       background-color: #B20000;
       padding: 1.5rem;
       color: #FFF; }
@@ -545,6 +546,7 @@ main .faq {
         font-size: 2.2rem; }
       main .faq .grid .container-question .question i {
         font-size: 1.8rem;
+        padding-left: 10px;
         cursor: pointer; }
     main .faq .grid .container-question .answer {
       font-size: 1.8rem;
