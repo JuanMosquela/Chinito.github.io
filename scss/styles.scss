@@ -628,7 +628,9 @@ main{
         h2{
             @include fs-2;
             text-align: center;
-            margin-bottom: 3rem;                    
+            margin-bottom: 3rem; 
+            display: inline-block;
+            border-bottom: 6px solid #fd5949;                   
         }
                 
 
@@ -792,7 +794,7 @@ main{
         }
 
         div{
-            padding: .5rem 0;
+            padding: .2rem 0;
         }
 
         .logo{

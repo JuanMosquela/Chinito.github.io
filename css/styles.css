@@ -500,7 +500,9 @@ main .products {
     font-style: italic;
     font-size: 3.4rem;
     text-align: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    display: inline-block;
+    border-bottom: 6px solid #fd5949; }
   main .products .container-products {
     display: flex;
     justify-content: space-around;
@@ -626,7 +628,7 @@ main .faq {
         justify-content: center;
         align-items: center; } }
     .footer .container-flex div {
-      padding: .5rem 0; }
+      padding: .2rem 0; }
     .footer .container-flex .logo img {
       width: 80px; }
     @media (max-width: 500px) {
