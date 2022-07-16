@@ -81,6 +81,8 @@
         }
     
         .lat-nav{
+            
+            
             transform: translateX(100%);
             position: absolute;
             top: 60px;
@@ -162,6 +164,8 @@
 }
 
 .sticky{
+    
+
     background-color: $white;
     box-shadow: 1px 10px 25px 0 rgba(0,0,0,0.3);
 
@@ -483,7 +487,7 @@ main{
                             color: $white; 
                             
                             @media(max-width:500px){
-                                font-size: 1.6rem;
+                                display: none;
                             }
                         }                        
                     }
