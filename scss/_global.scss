@@ -12,15 +12,15 @@
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-size: 65.2%; 
+    font-size: 62.5%; 
     
     @media(max-width:800px){
-        font-size: 62.5% ;
+        font-size: 60.5% ;
     
     }
 
     @media(max-width:500px){
-        font-size: 50.5% ;
+        font-size: 56.5% ;
     
     }
 }
@@ -45,7 +45,7 @@ section{
     display: inline-block;
     text-align: center;
     background-color: $red;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: $white;
     padding: 0.5rem 1rem;    

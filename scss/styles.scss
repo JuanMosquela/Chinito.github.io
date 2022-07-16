@@ -4,7 +4,7 @@
 .header{    
     position: fixed;           
     width: 100%;       
-    height: 70px;
+    height: 60px;
     z-index: 999;
     @include flex-center;     
 
@@ -42,14 +42,20 @@
                     margin: 0 1rem;
                     padding:0.5rem 1rem;                    
                     color:$light-white;
-                    font-weight: bold;  
+                      
                     position: relative;
                     text-transform: capitalize;
                     cursor: pointer;
                     font-size: 2rem;
+                    
 
                     a{
                         color: $light-white;
+
+                        &:hover{
+                            color: #FFF;
+                        }
+                        
                         
 
                         &::before{
@@ -77,16 +83,19 @@
         .lat-nav{
             transform: translateX(100%);
             position: absolute;
-            top: 70px;
+            top: 60px;
             right: 0;
-            width: 70%;
-            height: 500px;
-            padding: 1rem 2rem;
-            border-radius: 0 0 0 5px;
-            box-shadow: $box-shadow;
-            background-color: $white;
+            width: 100vw;
+            height: 100vh;
+                    
+            background-color: rgba(207, 24, 24, .8) ;
             
             ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 90%;
                 li{
                     padding: 2rem 0;
                     font-size: 2.4rem;  
@@ -99,6 +108,7 @@
                     a{
                         cursor: pointer;
                         color: $black;
+                        color: #FFF;
                     }
                 }
             }
@@ -138,8 +148,8 @@
         color: $white;
         background-color: $whatsapp;
         border-radius: 100%;
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
         box-shadow: 0 1px 10px rgba(0,0,0,0.3);
         z-index: 200;
     
@@ -175,12 +185,34 @@ main{
             height: 100%;
             width: 100%;
             position: relative;
-            overflow: hidden;            
-
-            img{
+            overflow: hidden; 
+            
+            .social{
                 position: absolute;
                 right: 10%;
+                bottom: 5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                a{
+                    color: #FFF;
+                    font-size: 3rem;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            }
+
+            img{
+                // position: absolute;
+                // right: 10%;
+                // height: 100%;
+                width: 100%;
                 height: 100%;
+                object-fit: cover;
                 
                 @media(max-width:600px){
                     inset: 0;                   
@@ -305,7 +337,7 @@ main{
 
     .shopping{
         @include flex-center; 
-        margin-bottom: 3rem;     
+             
 
         @media(max-width:886px){
             flex-direction: column;
@@ -379,7 +411,7 @@ main{
 
                 .img{
                     flex: 1 1 40rem;                    
-                    height: 680px;                    
+                    height: 500px;                    
                     overflow: hidden;
                     position: relative;  
                     
@@ -420,9 +452,7 @@ main{
                         object-fit: cover;
                         object-position: center; 
                         
-                        &:hover{
-                            transform: scale(1.05);
-                        }
+                        
                     }
                 }
 
@@ -465,8 +495,12 @@ main{
                                                
                     }
 
-                    .element{
-                        @include btn;                        
+                    .content-element{
+                        @include btn;
+                        
+                        .btn{
+                            color: #FFF;
+                        }
                                              
 
                         
@@ -485,15 +519,14 @@ main{
         align-items: center;
         padding: 0;
         background-color: $black;       
-        
 
         .img{
-            min-height: 100%;          
-            
+            min-height: 100%;
+            text-align: center;           
 
             img{
                height: 90vh;
-                object-fit: contain;
+               object-fit: contain;               
                 
             }
         }
@@ -540,7 +573,12 @@ main{
                     color: $white;                    
                     letter-spacing: 1px;
                     margin-bottom: 1.5rem;
-                    font-size: $p;        
+                    font-size: $p;
+                    
+                    span{
+                        color: $red-hover;
+                        border-bottom: $red-hover 2px solid;
+                    }
 
                 }
 
@@ -582,19 +620,27 @@ main{
         padding: 2rem 10%;
         margin-bottom: 3rem;
         background: url(../img/white-concrete-wall.jpg); 
+
+        h2{
+            @include fs-2;
+            text-align: center;
+            margin-bottom: 3rem;                    
+        }
                 
 
 
         .container-products{
             display: flex;
-            flex-wrap: wrap;
+            
             justify-content: space-around;           
             align-items: center;
             gap: 2rem;
 
             .card{
+                
                 overflow: hidden;
-                width: 400px;
+                width: 600px;
+                height: 300px;
                 border: 1px solid rgb(190, 185, 185);
 
                 
@@ -602,6 +648,7 @@ main{
                 &:hover{
                     box-shadow: 3px 6px 10px rgba(0,0,0,0.3);
                     cursor: pointer;
+                    transform: translateY(-10px);
                 }                
 
                 .img{
@@ -625,7 +672,7 @@ main{
                 .content{
                     padding: 1rem;
 
-                    h3{
+                    h4{
                         @include fs-4;
                         padding: .5rem 0;
                     }
@@ -650,7 +697,7 @@ main{
     
     .faq{
         min-height: 60rem;
-        padding: 4rem 10%;          
+        padding: 4rem 15%;          
         background-color: $white; 
         background-color: $black;  
         margin-bottom: 3rem; 
@@ -690,18 +737,19 @@ main{
                     align-items: center;
                     background-color: $red;
                     padding: 1.5rem;
-                    color: #FFF;                    
+                    color: #FFF; 
+                                      
 
                     &:hover{
                         background-color: $red-hover;
                     }
 
                     h4{
-                        font-size: $fs-4;
+                        font-size: 1.4rem;
                     }
 
                     i{
-                         font-size: 1.8rem;
+                         font-size: 1.6rem;
                          padding-left: 10px;
                          cursor: pointer;
                     }
@@ -754,7 +802,7 @@ main{
         }
 
         .social{            
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             text-align: center;
 
             a{
@@ -785,5 +833,56 @@ main{
         }
 
     }
+}
+
+.about .about-container{
+    display: flex;
+    padding: 5% 10%;
+    gap: 2rem;
+
+    .about-content{
+        flex: 1 1 30rem;
+
+        p{
+            color: #FFF;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-size: $p;
+            margin-bottom: 2rem
+            
+        }
+        .element{
+            @include btn;
+            width: 100%;
+        }
+
+        
+
+    }
+
+    figure{
+        width: 600px;
+        flex: 1 1 30rem;
+        p{
+            color: #FFF;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-size: $p;
+            margin-bottom: 2rem;
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            border-radius: 1rem;
+            
+        }
+        
+    }
+
+
 }
 

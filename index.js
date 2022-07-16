@@ -5,10 +5,6 @@ const header = document.querySelector(".header");
 const icons = document.querySelectorAll('.question i');
 
 
-
-
-
-
 questions.forEach(faq => {
     faq.addEventListener('click', () => {
         faq.classList.toggle('active')
@@ -20,8 +16,7 @@ window.addEventListener('scroll', ()=>{
     header.classList.toggle('sticky', window.scrollY > 0);
     if(latNav.classList.contains('open-close')){
         header.classList.add('sticky')
-    }     
-
+    }
 })
 
 menu.addEventListener('click', () => {
@@ -29,9 +24,7 @@ menu.addEventListener('click', () => {
     
     if(latNav.classList.contains('open-close')){
         header.classList.add('sticky')
-    }
-    
-    
+    }   
 
 })
 

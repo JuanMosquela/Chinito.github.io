@@ -11,13 +11,13 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 65.2%; }
+  font-size: 62.5%; }
   @media (max-width: 800px) {
     html {
-      font-size: 62.5%; } }
+      font-size: 60.5%; } }
   @media (max-width: 500px) {
     html {
-      font-size: 50.5%; } }
+      font-size: 56.5%; } }
 
 section {
   overflow-x: hidden; }
@@ -25,7 +25,7 @@ section {
 .header {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 60px;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -56,13 +56,14 @@ section {
         margin: 0 1rem;
         padding: 0.5rem 1rem;
         color: rgba(255, 255, 255, 0.7);
-        font-weight: bold;
         position: relative;
         text-transform: capitalize;
         cursor: pointer;
         font-size: 2rem; }
         .header .header-container .nav ul li a {
           color: rgba(255, 255, 255, 0.7); }
+          .header .header-container .nav ul li a:hover {
+            color: #FFF; }
           .header .header-container .nav ul li a::before {
             content: "";
             position: absolute;
@@ -78,24 +79,28 @@ section {
     .header .header-container .lat-nav {
       transform: translateX(100%);
       position: absolute;
-      top: 70px;
+      top: 60px;
       right: 0;
-      width: 70%;
-      height: 500px;
-      padding: 1rem 2rem;
-      border-radius: 0 0 0 5px;
-      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
-      background-color: #FFF; }
-      .header .header-container .lat-nav ul li {
-        padding: 2rem 0;
-        font-size: 2.4rem;
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-style: italic; }
-        .header .header-container .lat-nav ul li a {
-          cursor: pointer;
-          color: #000; }
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(207, 24, 24, 0.8); }
+      .header .header-container .lat-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%; }
+        .header .header-container .lat-nav ul li {
+          padding: 2rem 0;
+          font-size: 2.4rem;
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-style: italic; }
+          .header .header-container .lat-nav ul li a {
+            cursor: pointer;
+            color: #000;
+            color: #FFF; }
     .header .header-container .open-close {
       transform: translatex(0);
       transition: .3s ease; }
@@ -123,8 +128,8 @@ section {
     color: #FFF;
     background-color: #4EC95C;
     border-radius: 100%;
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 200; }
     .header .whatsapp:hover {
@@ -150,10 +155,22 @@ main .swiper-wrapper {
     width: 100%;
     position: relative;
     overflow: hidden; }
-    main .swiper-wrapper .swiper-slide img {
+    main .swiper-wrapper .swiper-slide .social {
       position: absolute;
       right: 10%;
-      height: 100%; }
+      bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
+      main .swiper-wrapper .swiper-slide .social a {
+        color: #FFF;
+        font-size: 3rem; }
+        main .swiper-wrapper .swiper-slide .social a:hover {
+          transform: scale(1.2); }
+    main .swiper-wrapper .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
       @media (max-width: 600px) {
         main .swiper-wrapper .swiper-slide img {
           inset: 0; } }
@@ -170,7 +187,7 @@ main .swiper-wrapper {
         font-size: 3rem;
         font-weight: bolder; }
       main .swiper-wrapper .swiper-slide .hero-content h1 {
-        font-size: 5rem;
+        font-size: 4.2rem;
         font-weight: 700;
         color: #FFF;
         margin-bottom: 2rem; }
@@ -178,7 +195,7 @@ main .swiper-wrapper {
         display: inline-block;
         text-align: center;
         background-color: #B20000;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
@@ -226,18 +243,18 @@ main .about, main .about .container {
         text-transform: uppercase;
         font-weight: 800;
         font-style: italic;
-        font-size: 4rem;
+        font-size: 3.4rem;
         margin-bottom: 2rem; }
       main .about .container .content p {
         letter-spacing: 1px;
         margin-bottom: 3rem;
         line-height: 2.4rem;
-        font-size: 1.8rem; }
+        font-size: 1.4rem; }
       main .about .container .content .element {
         display: inline-block;
         text-align: center;
         background-color: #B20000;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
@@ -253,8 +270,7 @@ main .about, main .about .container {
 main .shopping {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem; }
+  align-items: center; }
   @media (max-width: 886px) {
     main .shopping {
       flex-direction: column;
@@ -311,7 +327,7 @@ main .services {
           padding: 1rem; } }
       main .services .container .card .img {
         flex: 1 1 40rem;
-        height: 680px;
+        height: 500px;
         overflow: hidden;
         position: relative; }
         @media (max-width: 600px) {
@@ -343,8 +359,6 @@ main .services {
           height: 100%;
           object-fit: cover;
           object-position: center; }
-          main .services .container .card .img img:hover {
-            transform: scale(1.05); }
       main .services .container .card .content {
         flex: 1 1 40rem;
         background-color: #FFF;
@@ -358,7 +372,7 @@ main .services {
           text-transform: uppercase;
           font-weight: 800;
           font-style: italic;
-          font-size: 3rem;
+          font-size: 3.2rem;
           margin-bottom: 1.5rem;
           text-align: justify; }
           main .services .container .card .content h3 i {
@@ -371,25 +385,27 @@ main .services {
               main .services .container .card .content h3 i {
                 font-size: 1.6rem; } }
         main .services .container .card .content p {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           margin-bottom: 2rem;
           text-align: justify; }
-        main .services .container .card .content .element {
+        main .services .container .card .content .content-element {
           display: inline-block;
           text-align: center;
           background-color: #B20000;
-          font-size: 2rem;
+          font-size: 1.6rem;
           font-weight: 600;
           color: #FFF;
           padding: 0.5rem 1rem;
           text-transform: uppercase;
           transform: skew(-20deg); }
-          main .services .container .card .content .element .content-element {
+          main .services .container .card .content .content-element .content-element {
             transform: skew(20deg); }
-            main .services .container .card .content .element .content-element a {
+            main .services .container .card .content .content-element .content-element a {
               color: #FFF; }
-          main .services .container .card .content .element:hover {
+          main .services .container .card .content .content-element:hover {
             background-color: #cf1818; }
+          main .services .container .card .content .content-element .btn {
+            color: #FFF; }
 
 main .pricing {
   min-height: 90vh;
@@ -400,7 +416,8 @@ main .pricing {
   padding: 0;
   background-color: #000; }
   main .pricing .img {
-    min-height: 100%; }
+    min-height: 100%;
+    text-align: center; }
     main .pricing .img img {
       height: 90vh;
       object-fit: contain; }
@@ -427,17 +444,20 @@ main .pricing {
         text-transform: uppercase;
         font-weight: 800;
         font-style: italic;
-        font-size: 4rem;
+        font-size: 3.4rem;
         color: #FFF; }
       main .pricing .pricing-container .info-container h3 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         color: #FFF;
         margin: 1rem 0; }
       main .pricing .pricing-container .info-container p {
         color: #FFF;
         letter-spacing: 1px;
         margin-bottom: 1.5rem;
-        font-size: 1.8rem; }
+        font-size: 1.4rem; }
+        main .pricing .pricing-container .info-container p span {
+          color: #cf1818;
+          border-bottom: #cf1818 2px solid; }
       main .pricing .pricing-container .info-container ul {
         margin-bottom: 3rem; }
         @media (max-width: 600px) {
@@ -447,7 +467,7 @@ main .pricing {
           color: #FFF;
           font-size: 1rem;
           padding: 1rem 0;
-          font-size: 1.8rem; }
+          font-size: 1.4rem; }
           main .pricing .pricing-container .info-container ul li i {
             color: #B20000;
             margin-right: 1rem; }
@@ -455,7 +475,7 @@ main .pricing {
         display: inline-block;
         text-align: center;
         background-color: #B20000;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color: #FFF;
         padding: 0.5rem 1rem;
@@ -473,19 +493,28 @@ main .products {
   padding: 2rem 10%;
   margin-bottom: 3rem;
   background: url(../img/white-concrete-wall.jpg); }
+  main .products h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 3rem; }
   main .products .container-products {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     gap: 2rem; }
     main .products .container-products .card {
       overflow: hidden;
-      width: 400px;
+      width: 600px;
+      height: 300px;
       border: 1px solid #beb9b9; }
       main .products .container-products .card:hover {
         box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
-        cursor: pointer; }
+        cursor: pointer;
+        transform: translateY(-10px); }
       main .products .container-products .card .img {
         height: 100%;
         width: 100%; }
@@ -499,21 +528,21 @@ main .products {
           object-position: center; }
       main .products .container-products .card .content {
         padding: 1rem; }
-        main .products .container-products .card .content h3 {
+        main .products .container-products .card .content h4 {
           font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
           font-weight: 600;
           font-style: italic;
-          font-size: 2.2rem;
+          font-size: 2rem;
           padding: .5rem 0; }
         main .products .container-products .card .content p {
           margin-bottom: 1rem;
-          font-size: 1.8rem; }
+          font-size: 1.4rem; }
         main .products .container-products .card .content .element {
           display: inline-block;
           text-align: center;
           background-color: #B20000;
-          font-size: 2rem;
+          font-size: 1.6rem;
           font-weight: 600;
           color: #FFF;
           padding: 0.5rem 1rem;
@@ -529,7 +558,7 @@ main .products {
 
 main .faq {
   min-height: 60rem;
-  padding: 4rem 10%;
+  padding: 4rem 15%;
   background-color: #FFF;
   background-color: #000;
   margin-bottom: 3rem;
@@ -547,7 +576,7 @@ main .faq {
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
-    font-size: 4rem;
+    font-size: 3.4rem;
     color: #FFF;
     text-align: center; }
   main .faq .grid {
@@ -567,13 +596,13 @@ main .faq {
       main .faq .grid .container-question .question:hover {
         background-color: #cf1818; }
       main .faq .grid .container-question .question h4 {
-        font-size: 2.2rem; }
+        font-size: 1.4rem; }
       main .faq .grid .container-question .question i {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding-left: 10px;
         cursor: pointer; }
     main .faq .grid .container-question .answer {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       background-color: #FFF;
       max-height: 0;
       overflow: hidden;
@@ -604,7 +633,7 @@ main .faq {
       .footer .container-flex .logo {
         display: none; } }
     .footer .container-flex .social {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       text-align: center; }
       .footer .container-flex .social a {
         color: #FFF;
@@ -621,4 +650,48 @@ main .faq {
           -webkit-background-clip: text; }
     .footer .container-flex .copyright {
       color: #FFF;
-      font-size: 1.8rem; }
+      font-size: 1.4rem; }
+
+.about .about-container, main .about .container .about-container {
+  display: flex;
+  padding: 5% 10%;
+  gap: 2rem; }
+  .about .about-container .about-content {
+    flex: 1 1 30rem; }
+    .about .about-container .about-content p {
+      color: #FFF;
+      letter-spacing: 1px;
+      text-align: justify;
+      font-size: 1.4rem;
+      margin-bottom: 2rem; }
+    .about .about-container .about-content .element {
+      display: inline-block;
+      text-align: center;
+      background-color: #B20000;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #FFF;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      transform: skew(-20deg);
+      width: 100%; }
+      .about .about-container .about-content .element .content-element {
+        transform: skew(20deg); }
+        .about .about-container .about-content .element .content-element a {
+          color: #FFF; }
+      .about .about-container .about-content .element:hover {
+        background-color: #cf1818; }
+  .about .about-container figure {
+    width: 600px;
+    flex: 1 1 30rem; }
+    .about .about-container figure p {
+      color: #FFF;
+      letter-spacing: 1px;
+      text-align: justify;
+      font-size: 1.4rem;
+      margin-bottom: 2rem; }
+    .about .about-container figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem; }
